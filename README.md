@@ -1,7 +1,11 @@
-# validator
+# Использование:
 
-$email = '1231werwe.ru';
-echo Validator::isEmail($email);
 
-$tel = ' 79231216014 ';
-echo Validator::isPhoneNumber($tel);
+```php 
+Validator::isEmail(string $email) 
+//Удаляет пробелы сначала и конца строки и возвращает $email если формат подходит или false
+
+Validator::isPhoneNumber($tel);
+//Удаляет пробелы сначала и конца строки и возвращает $tel если формат подходит или false
+
+```
